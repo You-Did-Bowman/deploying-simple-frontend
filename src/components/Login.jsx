@@ -5,7 +5,7 @@ function Login() {
   const [data, setData] = useState({});
 
   const handleClickTest = () => {
-    fetch("http://localhost:3000/users")
+    fetch("https://deploying-simple-backend-i8de.onrender.com/users")
       .then((res) => res.json())
       .then(function (data) {
         const html = data
