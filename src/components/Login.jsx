@@ -42,7 +42,7 @@ const handleSubmit = (e) => {
   formData.append("password", data.password);
   formData.append("profilepic", document.getElementById("profilepic").files[0]);
 
-  fetch("http://localhost:3000/users/register", {
+  fetch("https://deploying-simple-backend-i8de.onrender.com/users/register", {
     method: "POST",
     body: formData,
   })
